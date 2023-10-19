@@ -18,7 +18,7 @@
   </head>
   <body>
     <header class="primary-header">
-      <div class="container">
+      <div class="container-sm">
         <div class="nav-wrapper">
           <a href="#">
             <img class="logo" src="images/logo-fist-blue.png" alt="Fist logo" />
@@ -36,7 +36,6 @@
               <li><button class="btn btn-primary">Povpraševanje</button></li>
             </ul>
           </nav>
-
           <div class="dropdown">
             <button class="dropbtn" id="selectedLanguage">
               <img src="images/countries/slovenia.png" alt="slovenia" />
@@ -65,7 +64,224 @@
       </div>
     </header>
 
-    <main></main>
+    <main>
+      <section class="hero-section">
+        <video src="" type="video/mp4"></video>
+        <div class="search-header">
+          <div class="search-wrapper container-sm">
+            <div class="search-bar">
+              <input
+                type="text"
+                placeholder="Iskanje po prodajnem programu"
+                class="search-bar__input"
+                aria-label="search"
+              />
+              <button>
+                <img
+                  src="images/magnifier.svg"
+                  class="search-bar__submit"
+                  aria-label="submit search"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-column-wrapper container-sm">
+          <div class="hero-column">
+            <h1 class="primary-heading">
+              Naši plastični granulati
+              <span>Vaši trajnostno naravni izdelki.</span>
+            </h1>
+            <p>
+              Ukvarjamo se z distribucijo plastičnih granulatov sit amet
+              consectetur. Aliquet mauris amet morbi tincidunt orci vitae
+              commodo.
+            </p>
+            <div class="btn-wrapper flex">
+              <button class="btn" data-type="light">Prodajni program</button>
+              <button class="btn" data-type="inverted">Povpraševanje</button>
+            </div>
+            <button>
+              <img
+                style="width: 2rem"
+                src="images/arrow-down.svg"
+                alt="skip to next section"
+              />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="sales-program-section">
+        <div class="container-sm">
+          <h4 class="secondary-heading text-center">naš prodajni program</h4>
+          <!-- Slider -->
+          <div class="slide-container">
+            <div class="slide-content">
+              <div class="card-wrapper">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="images/molecules2.png" alt="poliolefini" />
+                    <p class="card-title uppercase">POLIOLEFINI</p>
+                    <p class="card-description">
+                      Polieten je najpogostejša plastika. Njegova osnovna
+                      uporaba je v embalaži.
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-image">
+                    <img src="images/rolling-paper.png" alt="polieten" />
+                    <p class="card-title uppercase">TEHNIČNI MATERIALI</p>
+                    <p class="card-description">
+                      Polieten je najpogostejša plastika. Njegova osnovna
+                      uporaba je v embalaži.
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-image">
+                    <img src="images/molecules.png" alt="poliolefini" />
+                    <p class="card-title uppercase">TRAJNOSTNI MATERIALI</p>
+                    <p class="card-description">
+                      Polieten je najpogostejša plastika. Njegova osnovna
+                      uporaba je v embalaži.
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-image">
+                    <img src="images/cards.png" alt="poliolefini" />
+                    <p class="card-title uppercase">BARVILA IN DODATKI</p>
+                    <p class="card-description">
+                      Polieten je najpogostejša plastika. Njegova osnovna
+                      uporaba je v embalaži.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary">Celotni program</button>
+        </div>
+      </section>
+
+      <section class="process-section bg-dark">
+        <h4 class="secondary-heading">naš proces</h4>
+      </section>
+
+      <section class="container-sm">
+        <div class="grid">
+          <div>
+            <img src="images/purple-grains.png" alt="purple plastic grains" />
+          </div>
+          <div>
+            <p>
+              <span>Fist.</span> Neomejene možnosti s plastičnimi granulati.
+            </p>
+            <ul>
+              <li>
+                Ukvarjamo se z distribucijo plastičnih granulatov sit amet
+                consectetur.
+              </li>
+              <li>Aliquet mauris amet morbi tincidunt orci vitae commodo.</li>
+              <li>
+                Eget tempor cras curabitur nec pellentesque scelerisque et in.
+                Id turpis dictum egestas id enim at aliquam.
+              </li>
+              <li>
+                Eget tempor cras curabitur nec pellentesque scelerisque et in.
+                Id turpis dictum egestas id enim at aliquam.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="partners-section">
+        <div class="container-sm">
+          <h4 class="secondary-heading text-center">zastopamo</h4>
+          <!-- slider -->
+          <div class="slide-container">
+            <div class="slide-content">
+              <div class="card-wrapper">
+                <div class="partner-image">
+                  <img src="images/companies/borealis.png" alt="borealis" />
+                </div>
+                <div class="partner-image">
+                  <img src="images/companies/synthos.png" alt="synthos" />
+                </div>
+                <div class="partner-image">
+                  <img src="images/companies/chemTrend.png" alt="chemTrend" />
+                </div>
+                <div class="partner-image">
+                  <img src="images/companies/viba.png" alt="viba" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary">Vsa zastopstva</button>
+        </div>
+      </section>
+
+      <section class="news-section">
+        <div class="container-sm">
+          <h4 class="secondary-heading">
+            Svet 360°- Novice, nasveti in spoznanja na enem mestu
+          </h4>
+          <div class="news-grid grid">
+            <article class="news">
+              <p class="news-date">10. 3. 2023 · NOVICA</p>
+              <p class="news-title">
+                Strokovnost in trajnost združena v pridobitvi ISO 14001:2015
+              </p>
+              <p class="news-description">
+                Z veseljem vas obveščamo da smo v podjetju Fist d.o.o uspešno
+                pridobili okolijski standard ISO 14001:2015...
+              </p>
+              <a href="#" class="news-more">več</a>
+            </article>
+            <article class="news">
+              <p class="news-date">10. 3. 2023 · NOVICA</p>
+              <p class="news-title">
+                Naš partner SABIC s ponosom predstavlja novo trajnostno zmes
+                LNP™ ELCRIN™ WF0051iQ.
+              </p>
+              <p class="news-description">
+                Ta zmes ne zagotavlja le visoke zmogljivosti za električne
+                aplikacije, temveč prispeva tudi k stalnim okoljskim pobudam.
+              </p>
+              <a href="#" class="news-more">več</a>
+            </article>
+            <article class="news">
+              <p class="news-date">10. 3. 2023 · NOVICA</p>
+              <p class="news-title">
+                Strokovnost in trajnost združena v pridobitvi ISO 14001:2015
+              </p>
+              <p class="news-description">
+                Z veseljem vas obveščamo da smo v podjetju Fist d.o.o uspešno
+                pridobili okolijski standard ISO 14001:2015...
+              </p>
+              <a href="#" class="news-more">več</a>
+            </article>
+          </div>
+          <button class="btn btn-primary">Ves Svet 360°</button>
+        </div>
+      </section>
+
+      <section class="accordion-section">
+        <div class="container-sm grid">
+          <div>
+            <h4 class="secondary-heading">baza znanja</h4>
+          </div>
+          <div class="accordion">
+            <!-- code here -->
+          </div>
+        </div>
+        <button class="btn btn-primary" data-icon="true">Več znanja</button>
+      </section>
+    </main>
 
     <script src="/main.js"></script>
   </body>
