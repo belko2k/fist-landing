@@ -1,0 +1,39 @@
+:root {
+  --clr-primary-400: hsla(234, 36%, 41%, 1);
+
+  --clr-secondary-300: hsla(234, 69%, 85%, 1);
+  --clr-secondary-700: hsla(234, 53%, 18%, 1);
+  --clr-secondary-900: hsla(234, 55%, 12%, 1);
+
+  --clr-accent-400: hsla(28, 99%, 66%, 1);
+
+  --clr-neutral-100: hsla(0, 0%, 100%, 1);
+  --clr-neutral-300: hsla(0, 0%, 56%, 1);
+  --clr-neutral-400: hsla(0, 0%, 23%, 1);
+  --clr-neutral-900: hsla(0, 0%, 0%, 1);
+
+  --clr-bg-primary: hsla(209, 8%, 93%, 1);
+
+  --gradient-primary: linear-gradient(
+    var(--clr-accent-700),
+    var(--clr-primary-400)
+  );
+
+  --ff-primary: 'Roboto Condensed', sans-serif;
+  --ff-secondary: 'Roboto', sans-serif;
+
+  --ff-body: var(--ff-primary);
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --fs-200: 0.8125rem;
+  --fs-300: 0.875rem;
+  --fs-400: 1rem;
+  --fs-500: 1.125rem;
+  --fs-600: 1.25rem;
+  --fs-700: 1.375rem;
+  --fs-800: 2.625rem;
+  --fs-900: 3rem;
+}
