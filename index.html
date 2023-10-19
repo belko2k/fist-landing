@@ -15,7 +15,56 @@
     <!-- styles -->
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/style.css" />
-    <script type="module" src="/main.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <header class="primary-header">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#">
+            <img class="logo" src="images/logo-fist-blue.png" alt="Fist logo" />
+          </a>
+          <nav>
+            <ul role="list" class="primary-navigation">
+              <li>
+                <a href="#"><img src="images/home.svg" alt="Home" /></a>
+              </li>
+              <li><a href="#">Prodajalni program</a></li>
+              <li><a href="#">Zastopamo</a></li>
+              <li><a href="#">Svet 360°</a></li>
+              <li><a href="#">Baza znanja</a></li>
+              <li><a href="#">O nas</a></li>
+              <li><button class="btn btn-primary">Povpraševanje</button></li>
+            </ul>
+          </nav>
+
+          <div class="dropdown">
+            <button class="dropbtn" id="selectedLanguage">
+              <img src="images/countries/slovenia.png" alt="slovenia" />
+            </button>
+            <div class="dropdown-content">
+              <a href="#" onClick="changeLanguage('slovenia')"
+                ><img src="images/countries/slovenia.png" alt="slovenia"
+              /></a>
+              <a href="#" onClick="changeLanguage('united-kingdom')"
+                ><img
+                  src="images/countries/united-kingdom.png"
+                  alt="united-kingdom"
+              /></a>
+              <a href="#" onClick="changeLanguage('germany')"
+                ><img src="images/countries/germany.png" alt="germany"
+              /></a>
+              <a href="#" onClick="changeLanguage('france')"
+                ><img src="images/countries/france.png" alt="france"
+              /></a>
+              <a href="#" onClick="changeLanguage('italy')"
+                ><img src="images/countries/italy.png" alt="italy"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <script src="/main.js"></script>
+  </body>
 </html>
