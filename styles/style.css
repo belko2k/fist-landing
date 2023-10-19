@@ -69,13 +69,20 @@
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
+.dropdown-content.open {
+  display: block;
+}
+
 .dropdown-content a {
   padding: var(--_size);
   text-decoration: none;
   display: block;
 }
 
-.dropdown:hover .dropbtn,
 .dropdown-content a:hover {
+  background-color: var(--clr-neutral-300);
+}
+
+.dropdown:hover .dropbtn {
   background-color: var(--clr-neutral-300);
 }
