@@ -12,6 +12,13 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- styles -->
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/style.css" />
@@ -20,21 +27,22 @@
     <!-- Header -->
     <header class="primary-header">
       <div class="container-sm">
-        <div class="nav-wrapper">
-          <a href="#">
-            <img class="logo" src="images/logo-fist-blue.png" alt="Fist logo" />
-          </a>
+        <div class="nav-wrapper flex">
+          <div class="nav-logo">
+            <img src="images/logo-fist-blue1.png" alt="Fist logo" />
+          </div>
+          <div class="home-btn">
+            <a href="#"><img src="images/home.svg" alt="Home" /></a>
+          </div>
           <nav>
-            <ul id="primary-navigation" class="primary-navigation">
-              <li>
-                <a href="#"><img src="images/home.svg" alt="Home" /></a>
-              </li>
+            <ul id="primary-navigation" class="primary-navigation flex">
+              <li class="home-link"><a href="#">Domov</a></li>
               <li><a href="#">Prodajalni program</a></li>
               <li><a href="#">Zastopamo</a></li>
               <li><a href="#">Svet 360°</a></li>
               <li><a href="#">Baza znanja</a></li>
               <li><a href="#">O nas</a></li>
-              <li><button class="btn btn-primary">Povpraševanje</button></li>
+              <button class="btn btn-primary">Povpraševanje</button>
             </ul>
           </nav>
           <div class="dropdown">
@@ -62,6 +70,7 @@
             </div>
           </div>
           <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+            <i class="fa-solid fa-bars fa-2xl" style="color: #000000"></i>
             <span class="sr-only" aria-expanded="false">Menu</span>
           </button>
         </div>
@@ -172,7 +181,9 @@
       </section>
 
       <section class="process-section bg-dark">
-        <h4 class="secondary-heading">naš proces</h4>
+        <div class="container-sm">
+          <h4 class="secondary-heading" data-clr="white">naš proces</h4>
+        </div>
       </section>
 
       <section class="container-sm">
@@ -275,15 +286,17 @@
       </section>
 
       <section class="accordion-section">
-        <div class="container-sm grid">
-          <div>
-            <h4 class="secondary-heading" data-clr="white">baza znanja</h4>
+        <div class="container-sm">
+          <div class="grid">
+            <div>
+              <h4 class="secondary-heading" data-clr="white">baza znanja</h4>
+            </div>
+            <div class="accordion">
+              <!-- code here -->
+            </div>
           </div>
-          <div class="accordion">
-            <!-- code here -->
-          </div>
+          <button class="btn btn-primary" data-icon="true">Več znanja</button>
         </div>
-        <button class="btn btn-primary" data-icon="true">Več znanja</button>
       </section>
 
       <section class="customers-section">
