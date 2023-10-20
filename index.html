@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
+    <!-- Header -->
     <header class="primary-header">
       <div class="container-sm">
         <div class="nav-wrapper">
@@ -24,7 +25,7 @@
             <img class="logo" src="images/logo-fist-blue.png" alt="Fist logo" />
           </a>
           <nav>
-            <ul role="list" class="primary-navigation">
+            <ul id="primary-navigation" class="primary-navigation">
               <li>
                 <a href="#"><img src="images/home.svg" alt="Home" /></a>
               </li>
@@ -60,10 +61,13 @@
               /></a>
             </div>
           </div>
+          <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+            <span class="sr-only" aria-expanded="false">Menu</span>
+          </button>
         </div>
       </div>
     </header>
-
+    <!-- Main content -->
     <main>
       <section class="hero-section">
         <video src="" type="video/mp4"></video>
@@ -123,42 +127,42 @@
                 <div class="card">
                   <div class="card-image">
                     <img src="images/molecules2.png" alt="poliolefini" />
-                    <p class="card-title uppercase">POLIOLEFINI</p>
-                    <p class="card-description">
-                      Polieten je najpogostejša plastika. Njegova osnovna
-                      uporaba je v embalaži.
-                    </p>
                   </div>
+                  <p class="card-title uppercase">POLIOLEFINI</p>
+                  <p class="card-description">
+                    Polieten je najpogostejša plastika. Njegova osnovna uporaba
+                    je v embalaži.
+                  </p>
                 </div>
                 <div class="card">
                   <div class="card-image">
                     <img src="images/rolling-paper.png" alt="polieten" />
-                    <p class="card-title uppercase">TEHNIČNI MATERIALI</p>
-                    <p class="card-description">
-                      Polieten je najpogostejša plastika. Njegova osnovna
-                      uporaba je v embalaži.
-                    </p>
                   </div>
+                  <p class="card-title uppercase">TEHNIČNI MATERIALI</p>
+                  <p class="card-description">
+                    Polieten je najpogostejša plastika. Njegova osnovna uporaba
+                    je v embalaži.
+                  </p>
                 </div>
                 <div class="card">
                   <div class="card-image">
                     <img src="images/molecules.png" alt="poliolefini" />
-                    <p class="card-title uppercase">TRAJNOSTNI MATERIALI</p>
-                    <p class="card-description">
-                      Polieten je najpogostejša plastika. Njegova osnovna
-                      uporaba je v embalaži.
-                    </p>
                   </div>
+                  <p class="card-title uppercase">TRAJNOSTNI MATERIALI</p>
+                  <p class="card-description">
+                    Polieten je najpogostejša plastika. Njegova osnovna uporaba
+                    je v embalaži.
+                  </p>
                 </div>
                 <div class="card">
                   <div class="card-image">
                     <img src="images/cards.png" alt="poliolefini" />
-                    <p class="card-title uppercase">BARVILA IN DODATKI</p>
-                    <p class="card-description">
-                      Polieten je najpogostejša plastika. Njegova osnovna
-                      uporaba je v embalaži.
-                    </p>
                   </div>
+                  <p class="card-title uppercase">BARVILA IN DODATKI</p>
+                  <p class="card-description">
+                    Polieten je najpogostejša plastika. Njegova osnovna uporaba
+                    je v embalaži.
+                  </p>
                 </div>
               </div>
             </div>
@@ -273,7 +277,7 @@
       <section class="accordion-section">
         <div class="container-sm grid">
           <div>
-            <h4 class="secondary-heading">baza znanja</h4>
+            <h4 class="secondary-heading" data-clr="white">baza znanja</h4>
           </div>
           <div class="accordion">
             <!-- code here -->
@@ -281,8 +285,75 @@
         </div>
         <button class="btn btn-primary" data-icon="true">Več znanja</button>
       </section>
-    </main>
 
+      <section class="customers-section">
+        <div class="container-sm">
+          <h4 class="secondary-heading text-center">naše zadovoljne stranke</h4>
+          <!-- slider -->
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="container-sm">
+        <div class="footer-even-columns grid">
+          <div>
+            <img src="images/logo-fist-black.png" alt="Fist logo" />
+          </div>
+          <div class="grid">
+            <p class="bold">Fist d.o.o</p>
+            <div>
+              <p>Brodišče 4, 1236 Trzin</p>
+              <p>Slovenija</p>
+            </div>
+            <div>
+              <p>T +386 1 562 11 53</p>
+              <p>
+                E
+                <a href="#" data-email="true">info@fist.si </a>
+              </p>
+            </div>
+          </div>
+          <div>
+            <h4 class="secondary-heading" data-clr="white">
+              prodajalni program
+            </h4>
+            <ul class="footer-sales-program-list">
+              <li>Polieteleni</li>
+              <li>Folijski materiali</li>
+              <li>Stireni</li>
+              <li>Barvila in dodatki</li>
+              <li>Polipropileni</li>
+              <li>Tehnični granulati</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="secondary-heading" data-clr="white">spremljajte nas</h4>
+            <ul class="footer-social-media-list">
+              <li>
+                <img
+                  src="images/social-icons/linkedin.png"
+                  alt="linkedin logo"
+                />
+                <a href="#">Linkedin</a>
+              </li>
+              <li>
+                <img src="images/social-icons/youtube.png" alt="youtube logo" />
+                <a href="#">YouTube</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bar">
+          <ul class="footer-bar-links">
+            <li>&copy; 2023 Fist d.o.o</li>
+            <li>Pravila in pogoji uporabe</li>
+            <li>Piškotki in zasebnost</li>
+            <li>Oblikovanje in razvoj spletnih strani: Humanfrog</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
     <script src="/main.js"></script>
   </body>
 </html>
