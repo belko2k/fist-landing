@@ -79,9 +79,12 @@
     <!-- Main content -->
     <main>
       <section class="hero-section">
-        <video src="" type="video/mp4"></video>
+        <video class="video-bg" autoplay muted loop>
+          <source src="images/video.mp4" type="video/mp4" />
+        </video>
         <div class="search-header">
           <div class="search-wrapper container-sm">
+            <div class="dark-block"></div>
             <div class="search-bar">
               <input
                 type="text"
@@ -104,7 +107,9 @@
           <div class="hero-column">
             <h1 class="primary-heading">
               Naši plastični granulati
-              <span>Vaši trajnostno naravni izdelki.</span>
+              <span class="bold dblock"
+                >Vaši trajnostno naravnani izdelki.</span
+              >
             </h1>
             <p>
               Ukvarjamo se z distribucijo plastičnih granulatov sit amet
@@ -112,21 +117,19 @@
               commodo.
             </p>
             <div class="btn-wrapper flex">
-              <button class="btn" data-type="light">Prodajni program</button>
+              <button class="btn bold" data-type="light">
+                Prodajni program
+              </button>
               <button class="btn" data-type="inverted">Povpraševanje</button>
             </div>
-            <button>
-              <img
-                style="width: 2rem"
-                src="images/arrow-down.svg"
-                alt="skip to next section"
-              />
-            </button>
+            <a href="#sales-program-section">
+              <img src="images/arrow-down.svg" alt="skip to next section" />
+            </a>
           </div>
         </div>
       </section>
 
-      <section class="sales-program-section">
+      <section id="sales-program-section">
         <div class="container-sm">
           <h4 class="secondary-heading text-center">naš prodajni program</h4>
           <!-- Slider -->
