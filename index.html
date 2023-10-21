@@ -138,7 +138,7 @@
           <h4 class="secondary-heading text-center">naš prodajni program</h4>
           <!-- Slider -->
           <div class="slide-container swiper">
-            <div class="slide-content">
+            <div class="slide-content swiper1">
               <div class="swiper-wrapper">
                 <div class="card grid swiper-slide">
                   <div class="card-image">
@@ -218,7 +218,6 @@
             <div class="swiper-button-prev">
               <img src="images/left-arrow.svg" alt="" />
             </div>
-            <div class="swiper-scrollbar"></div>
             <div class="swiper-pagination"></div>
           </div>
           <button class="btn btn-primary">Celotni program</button>
@@ -231,16 +230,17 @@
         </div>
       </section>
 
-      <section class="container-sm">
-        <div class="grid">
+      <section class="granulats-section container-sm">
+        <div class="even-columns grid">
           <div>
             <img src="images/purple-grains.png" alt="purple plastic grains" />
           </div>
-          <div>
-            <p>
-              <span>Fist.</span> Neomejene možnosti s plastičnimi granulati.
-            </p>
-            <ul>
+          <div class="text-col grid">
+            <h3 class="granulats-heading">
+              <span class="bold">Fist.</span> Neomejene možnosti s plastičnimi
+              granulati.
+            </h3>
+            <ul class="text-col__list">
               <li>
                 Ukvarjamo se z distribucijo plastičnih granulatov sit amet
                 consectetur.
@@ -263,67 +263,82 @@
         <div class="container-sm">
           <h4 class="secondary-heading text-center">zastopamo</h4>
           <!-- slider -->
-          <div class="slide-container">
-            <div class="slide-content">
-              <div class="card-wrapper">
-                <div class="partner-image">
+          <div class="slide-container swiper">
+            <div class="swiper2">
+              <div class="swiper-wrapper">
+                <div class="partner-image swiper-slide">
                   <img src="images/companies/borealis.png" alt="borealis" />
                 </div>
-                <div class="partner-image">
+                <div class="partner-image swiper-slide">
                   <img src="images/companies/synthos.png" alt="synthos" />
                 </div>
-                <div class="partner-image">
+                <div class="partner-image swiper-slide">
                   <img src="images/companies/chemTrend.png" alt="chemTrend" />
                 </div>
-                <div class="partner-image">
+                <div class="partner-image swiper-slide">
+                  <img src="images/companies/viba.png" alt="viba" />
+                </div>
+                <div class="partner-image swiper-slide">
                   <img src="images/companies/viba.png" alt="viba" />
                 </div>
               </div>
             </div>
-          </div>
-          <button class="btn btn-primary">Vsa zastopstva</button>
+            <div class="swiper-button-next-2">
+              <img src="images/right-arrow-purple.svg" alt="" />
+            </div>
+            <div class="swiper-button-prev-2">
+              <img src="images/left-arrow.svg" alt="" />
+            </div>
+            <div class="swiper-pagination-2"></div>
         </div>
-      </section>
+      <button class="btn btn-primary">Celotni program</button>
+    </section>
 
       <section class="news-section">
         <div class="container-sm">
-          <h4 class="secondary-heading">
+          <h4 class="secondary-heading text-center">
             Svet 360°- Novice, nasveti in spoznanja na enem mestu
           </h4>
           <div class="news-grid grid">
-            <article class="news">
+            <article class="news flex">
               <p class="news-date">10. 3. 2023 · NOVICA</p>
-              <p class="news-title">
+              <p class="news-title bold">
                 Strokovnost in trajnost združena v pridobitvi ISO 14001:2015
               </p>
-              <p class="news-description">
-                Z veseljem vas obveščamo da smo v podjetju Fist d.o.o uspešno
-                pridobili okolijski standard ISO 14001:2015...
-              </p>
-              <a href="#" class="news-more">več</a>
+              <div>
+                <p class="news-description">
+                  Z veseljem vas obveščamo da smo v podjetju Fist d.o.o uspešno
+                  pridobili okolijski standard ISO 14001:2015...
+                </p>
+                <a href="#" class="news-more">več</a>
+              </div>
             </article>
-            <article class="news">
+            <article class="news flex">
               <p class="news-date">10. 3. 2023 · NOVICA</p>
-              <p class="news-title">
+              <p class="news-title bold">
                 Naš partner SABIC s ponosom predstavlja novo trajnostno zmes
                 LNP™ ELCRIN™ WF0051iQ.
               </p>
-              <p class="news-description">
-                Ta zmes ne zagotavlja le visoke zmogljivosti za električne
-                aplikacije, temveč prispeva tudi k stalnim okoljskim pobudam.
-              </p>
-              <a href="#" class="news-more">več</a>
+              <div>
+                <p class="news-description">
+                  Ta zmes ne zagotavlja le visoke zmogljivosti za električne
+                  aplikacije, temveč prispeva tudi k stalnim okoljskim pobudam.
+                </p>
+                <a href="#" class="news-more">več</a>
+              </div>
             </article>
-            <article class="news">
+            <article class="news flex">
               <p class="news-date">10. 3. 2023 · NOVICA</p>
-              <p class="news-title">
+              <p class="news-title bold">
                 Strokovnost in trajnost združena v pridobitvi ISO 14001:2015
               </p>
-              <p class="news-description">
-                Z veseljem vas obveščamo da smo v podjetju Fist d.o.o uspešno
-                pridobili okolijski standard ISO 14001:2015...
-              </p>
-              <a href="#" class="news-more">več</a>
+              <div>
+                <p class="news-description">
+                  Z veseljem vas obveščamo da smo v podjetju Fist d.o.o uspešno
+                  pridobili okolijski standard ISO 14001:2015...
+                </p>
+                <a href="#" class="news-more">več</a>
+              </div>
             </article>
           </div>
           <button class="btn btn-primary">Ves Svet 360°</button>
@@ -344,10 +359,38 @@
         </div>
       </section>
 
-      <section class="customers-section">
+        <section class="customers-section">
         <div class="container-sm">
           <h4 class="secondary-heading text-center">naše zadovoljne stranke</h4>
           <!-- slider -->
+          <div class="slide-container swiper">
+            <div class="swiper3">
+              <div class="swiper-wrapper img-wrapper">
+                <div class="customer-image swiper-slide">
+                  <img src="images/companies/gorenje.png" alt="gorenje logo" />
+                </div>
+                <div class="customer-image swiper-slide">
+                  <img src="images/companies/bsh.png" alt="bsh logo" />
+                </div>
+                <div class="customer-image swiper-slide">
+                  <img src="images/companies/gorenje.png" alt="gorenje logo" />
+                </div>
+                <div class="customer-image swiper-slide">
+                  <img src="images/companies/bsh.png" alt="bsh logo" />
+                </div>
+                <div class="customer-image swiper-slide">
+                  <img src="images/companies/gorenje.png" alt="gorenje logo" />
+                </div>
+
+              </div>
+            </div>
+            <div class="swiper-button-next-3">
+              <img src="images/right-arrow-purple.svg" alt="" />
+            </div>
+            <div class="swiper-button-prev-3">
+              <img src="images/left-arrow.svg" alt="" />
+            </div>
+            <div class="swiper-pagination-3"></div>
         </div>
       </section>
     </main>

@@ -73,7 +73,7 @@ navToggle.addEventListener("click", () => {
 
 // SLIDER
 
-let swiper = new Swiper(".slide-content", {
+let swiper1 = new Swiper(".swiper1", {
     slidesPerView: 4,
     centeredSlides: false,
     slidesPerGroupSkip: 1,
@@ -103,4 +103,69 @@ let swiper = new Swiper(".slide-content", {
         el: ".swiper-pagination",
         clickable: true,
     },
-});;
+});
+
+let swiper2 = new Swiper(".swiper2", {
+    slidesPerView: 4,
+    centeredSlides: false,
+    slidesPerGroupSkip: 1,
+    grabCursor: true,
+    keyboard: {
+        enabled: true,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        480: {
+            slidesPerView: 2,
+        },
+        700: {
+            slidesPerView: 3
+        },
+        900: {
+            slidesPerView: 4
+        }
+    },
+    navigation: {
+        nextEl: ".swiper-button-next-2",
+        prevEl: ".swiper-button-prev-2",
+    },
+    pagination: {
+        el: ".swiper-pagination-2",
+        clickable: true,
+    },
+});
+
+let swiper3 = new Swiper(".swiper3", {
+    slidesPerView: 4,
+    centeredSlides: false,
+    slidesPerGroupSkip: 1,
+    grabCursor: true,
+    keyboard: {
+        enabled: true,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        480: {
+            slidesPerView: 2,
+        },
+        700: {
+            slidesPerView: 3
+        },
+        900: {
+            slidesPerView: 4
+        }
+    },
+    navigation: {
+        nextEl: ".swiper-button-next-3",
+        prevEl: ".swiper-button-prev-3",
+    },
+    pagination: {
+        el: ".swiper-pagination-3",
+        clickable: true,
+    },
+});
+
