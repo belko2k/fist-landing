@@ -184,6 +184,7 @@ body {
     aspect-ratio: 1;
     top: 1.8rem;
     right: 1.9rem;
+    cursor: pointer;
   }
 
   .dropdown {
@@ -307,6 +308,7 @@ body {
   flex-shrink: 0;
   border: none;
   background: transparent;
+  cursor: pointer;
 }
 
 .search-bar button img {
@@ -410,13 +412,6 @@ body {
   padding-block: 5rem;
 }
 
-.card-wrapper {
-  outline: 1px solid pink;
-  grid-template-columns: repeat(4, 203px);
-  justify-content: center;
-  gap: 1.875rem;
-}
-
 .card {
   gap: 1rem;
   position: relative;
@@ -467,6 +462,7 @@ body {
 
 .card-description {
   line-height: 1.2;
+  width: 190px;
 }
 /* Utility classes */
 
@@ -517,4 +513,22 @@ body {
 
 .dblock {
   display: block;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--clr-primary-400);
+}
+
+.swiper-button-next::after,
+.swiper-rtl .swiper-button-prev::after,
+.swiper-button-prev::after,
+.swiper-rtl .swiper-button-next::after {
+  content: '';
+}
+
+@media (max-width: 1030px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
 }

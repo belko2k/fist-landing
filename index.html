@@ -5,6 +5,10 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fist</title>
+
+    <!-- SLider css -->
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css" />
+
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -133,21 +137,23 @@
         <div class="container-sm">
           <h4 class="secondary-heading text-center">naš prodajni program</h4>
           <!-- Slider -->
-          <div class="slide-container">
+          <div class="slide-container swiper">
             <div class="slide-content">
-              <div class="card-wrapper grid">
-                <div class="card grid">
+              <div class="swiper-wrapper">
+                <div class="card grid swiper-slide">
                   <div class="card-image">
                     <img src="images/molecules2.png" alt="poliolefini" />
                     <img class="bg" src="images/Rectangle.png" />
                   </div>
+
                   <p class="card-title uppercase bold">POLIOLEFINI</p>
                   <p class="card-description">
                     Polieten je najpogostejša plastika. Njegova osnovna uporaba
                     je v embalaži.
                   </p>
                 </div>
-                <div class="card grid">
+
+                <div class="card grid swiper-slide">
                   <div class="card-image">
                     <img
                       class="rolling-paper"
@@ -162,7 +168,7 @@
                     je v embalaži.
                   </p>
                 </div>
-                <div class="card grid">
+                <div class="card grid swiper-slide">
                   <div class="card-image">
                     <img
                       class="molecules2"
@@ -177,7 +183,7 @@
                     je v embalaži.
                   </p>
                 </div>
-                <div class="card grid">
+                <div class="card grid swiper-slide">
                   <div class="card-image">
                     <img
                       class="cards-img"
@@ -192,8 +198,28 @@
                     je v embalaži.
                   </p>
                 </div>
+                <div class="card grid swiper-slide">
+                  <div class="card-image">
+                    <img src="images/molecules2.png" alt="poliolefini" />
+                    <img class="bg" src="images/Rectangle.png" />
+                  </div>
+
+                  <p class="card-title uppercase bold">POLIOLEFINI</p>
+                  <p class="card-description">
+                    Polieten je najpogostejša plastika. Njegova osnovna uporaba
+                    je v embalaži.
+                  </p>
+                </div>
               </div>
             </div>
+            <div class="swiper-button-next">
+              <img src="images/right-arrow-purple.svg" alt="" />
+            </div>
+            <div class="swiper-button-prev">
+              <img src="images/left-arrow.svg" alt="" />
+            </div>
+            <div class="swiper-scrollbar"></div>
+            <div class="swiper-pagination"></div>
           </div>
           <button class="btn btn-primary">Celotni program</button>
         </div>
@@ -386,6 +412,7 @@
         </div>
       </div>
     </footer>
-    <script src="/main.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
