@@ -3,6 +3,7 @@ const dropDownContent = document.querySelector('.dropdown-content');
 const navigationLinks = document.querySelectorAll('.primary-navigation li a');
 const searchButton = document.querySelector('.search-bar button');
 const searchInput = document.querySelector('.search-bar input');
+const faqContainer = document.querySelector('.faq-content');
 
 // Stop Animations During Window Resizing 
 
@@ -169,3 +170,38 @@ let swiper3 = new Swiper(".swiper3", {
     },
 });
 
+// FAQ ACCORDION
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    faqContainer.addEventListener('click', (e) => {
+        const groupQuestion = e.target.closest('.faq-question');
+
+        if (!groupQuestion) return;
+
+        const group = groupQuestion.parentElement;
+        const groupAnswer = group.querySelector('.faq-answer');
+        const icon = groupQuestion.querySelector('i');
+
+        // Toggle icon
+        icon.classList.toggle('fa-caret-down');
+        icon.classList.toggle('fa-caret-up');
+
+        // Toggle visibility of body
+        groupAnswer.classList.toggle('open');
+
+        // Close other open FAQ bodies
+        const otherGroups = faqContainer.querySelectorAll('.faq-group');
+
+        otherGroups.forEach((otherGroup) => {
+            if (otherGroup !== group) {
+                const otherGroupAnswer = otherGroup.querySelector('.faq-answer');
+                const otherIcon = otherGroup.querySelector('.faq-question i');
+
+                otherGroupAnswer.classList.remove('open');
+                otherIcon.classList.remove('fa-caret-up');
+                otherIcon.classList.add('fa-caret-down');
+            }
+        });
+    });
+});
