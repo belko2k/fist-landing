@@ -20,10 +20,10 @@
 
   --clr-bg-primary: hsla(209, 8%, 93%, 1);
 
-  --gradient-primary: linear-gradient(
+  /* --gradient-primary: linear-gradient(
     var(--clr-secondary-700),
     var(--clr-primary-400)
-  );
+  ); */
 
   --ff-primary: 'Roboto Condensed', sans-serif;
   --ff-secondary: 'Roboto', sans-serif;
@@ -482,12 +482,13 @@ body {
 /* Process section */
 
 .process-section {
-  height: 500px;
   margin-top: 2.8125rem;
   padding-block: 2.125rem;
+  height: 618px;
 }
 
-.process-section .process-wrapper.flex {
+.process-section .process-wrapper.grid {
+  grid-template-columns: 1fr 1fr;
   justify-content: space-between;
 }
 
