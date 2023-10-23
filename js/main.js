@@ -187,10 +187,8 @@ document.addEventListener('DOMContentLoaded', () => {
         icon.classList.toggle('fa-caret-down');
         icon.classList.toggle('fa-caret-up');
 
-        // Toggle visibility of body
         groupAnswer.classList.toggle('open');
 
-        // Close other open FAQ bodies
         const otherGroups = faqContainer.querySelectorAll('.faq-group');
 
         otherGroups.forEach((otherGroup) => {
