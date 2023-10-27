@@ -566,14 +566,9 @@ body {
 .partners-section {
   position: relative;
   margin-top: 1.875rem;
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
   background-color: var(--clr-neutral-100);
   box-shadow: var(--section-box-shadow);
-}
-
-.partners-section .slide-container {
-  padding-block: 3rem;
-  margin-top: 2rem;
 }
 
 .partners-section .secondary-heading {
@@ -590,7 +585,7 @@ body {
   bottom: -30px;
 }
 
-.partners-section button {
+.partners-section button[data-slider-btn='false'] {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -630,6 +625,7 @@ body {
   font-size: var(--fs-200);
   font-family: var(--ff-secondary);
   color: var(--clr-neutral-300);
+  letter-spacing: 1px;
 }
 
 .news-title {
@@ -762,13 +758,8 @@ button[data-icon='arrow']::before {
 
 .customers-section {
   position: relative;
-  padding-top: 3.75rem;
+  padding-block: 3.75rem 4rem;
   box-shadow: var(--section-box-shadow);
-}
-
-.customers-section .slide-container {
-  padding-block: 3rem;
-  margin-top: 2rem;
 }
 
 .customer-image:not(:first-child)::before {
@@ -779,11 +770,6 @@ button[data-icon='arrow']::before {
   background-color: var(--clr-neutral-200);
   left: -5px;
   top: -40px;
-}
-
-.customers-section .img-wrapper {
-  display: flex;
-  align-items: center;
 }
 
 /* FOOTER */
@@ -906,8 +892,9 @@ footer {
 @media (max-width: 870px) {
   .footer-even-columns.grid {
     grid-template-areas:
-      'program info'
-      'logo socials';
+      'program socials'
+      'info auto'
+      'logo auto';
     justify-content: center;
   }
 }
@@ -986,7 +973,7 @@ footer {
   bottom: -18px;
 }
 
-.swiper-pagination-bullet {
+/* .swiper-pagination-bullet {
   background-color: var(--clr-primary-400);
 }
 
@@ -1011,4 +998,45 @@ footer {
   align-items: center;
   justify-content: center;
   position: relative;
+} */
+
+.splide {
+  position: static;
+}
+
+.slider-wrapper {
+  position: relative;
+  max-width: 100%;
+  margin-inline: auto;
+  padding-block: 5rem;
+}
+
+.splide__list {
+  display: flex;
+  align-items: center;
+}
+
+.image-wrapper {
+  justify-content: center;
+}
+
+.splide__arrow--next {
+  right: -50px;
+  background: none;
+  opacity: 1;
+}
+
+.splide__arrow--prev {
+  left: -50px;
+  background: none;
+  opacity: 1;
+}
+
+.splide__pagination {
+  gap: 0.5rem;
+}
+
+.splide__pagination__page.is-active {
+  opacity: 1;
+  background-color: var(--clr-primary-400);
 }

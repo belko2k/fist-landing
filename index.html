@@ -7,7 +7,12 @@
     <title>Fist</title>
 
     <!-- Slider css -->
-    <link rel="stylesheet" href="styles/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="styles/swiper-bundle.min.css" /> -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -92,7 +97,6 @@
         </video>
         <div class="search-header">
           <div class="search-wrapper container-sm">
-            <div class="dark-block"></div>
             <div class="search-bar">
               <input
                 type="text"
@@ -277,36 +281,70 @@
       <section class="partners-section">
         <div class="container-sm">
           <h4 class="secondary-heading text-center">zastopamo</h4>
-          <div class="slide-container swiper">
-            <div class="swiper2">
-              <div class="swiper-wrapper">
-                <div class="partner-image swiper-slide">
-                  <img src="images/companies/borealis.png" alt="borealis" />
-                </div>
-                <div class="partner-image swiper-slide">
-                  <img src="images/companies/synthos.png" alt="synthos" />
-                </div>
-                <div class="partner-image swiper-slide">
-                  <img src="images/companies/chemTrend.png" alt="chemTrend" />
-                </div>
-                <div class="partner-image swiper-slide">
-                  <img src="images/companies/viba.png" alt="viba" />
-                </div>
-                <div class="partner-image swiper-slide">
-                  <img src="images/companies/viba.png" alt="viba" />
+          <!-- slider -->
+          <div class="slider-wrapper">
+            <div id="splide2" class="splide">
+              <div class="splide__arrows">
+                <button
+                  data-slider-btn="true"
+                  class="splide__arrow splide__arrow--prev"
+                >
+                  <img src="images/left-arrow.svg" />
+                </button>
+                <button
+                  data-slider-btn="true"
+                  class="splide__arrow splide__arrow--next"
+                >
+                  <img src="images/right-arrow-purple.svg" />
+                </button>
+              </div>
+              <div class="splide__track">
+                <div class="splide__list">
+                  <div class="splide__slide">
+                    <div class="image-wrapper flex">
+                      <img
+                        src="images/companies/borealis.png"
+                        alt="borealis logo"
+                      />
+                    </div>
+                  </div>
+                  <div class="splide__slide">
+                    <div class="image-wrapper flex">
+                      <img
+                        src="images/companies/chemTrend.png"
+                        alt="chemTrend logo"
+                      />
+                    </div>
+                  </div>
+                  <div class="splide__slide">
+                    <div class="image-wrapper flex">
+                      <img
+                        src="images/companies/synthos.png"
+                        alt="synthos logo"
+                      />
+                    </div>
+                  </div>
+                  <div class="splide__slide">
+                    <div class="image-wrapper flex">
+                      <img src="images/companies/viba.png" alt="viba logo" />
+                    </div>
+                  </div>
+                  <div class="splide__slide">
+                    <div class="image-wrapper flex">
+                      <img
+                        src="images/companies/chemTrend.png"
+                        alt="chemTrend logo"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="swiper-button-next-2">
-              <img src="images/right-arrow-purple.svg" alt="" />
-            </div>
-            <div class="swiper-button-prev-2">
-              <img src="images/left-arrow.svg" alt="" />
-            </div>
-            <div class="swiper-pagination-2"></div>
           </div>
         </div>
-        <button class="btn btn-primary">Celotni program</button>
+        <button data-slider-btn="false" class="btn btn-primary">
+          Vsa zastopstva
+        </button>
       </section>
 
       <!-- NEWS -->
@@ -471,33 +509,52 @@
         <div class="container-sm">
           <h4 class="secondary-heading text-center">naše zadovoljne stranke</h4>
           <!-- slider -->
-          <div class="slide-container swiper">
-            <div class="swiper3">
-              <div class="swiper-wrapper img-wrapper">
-                <div class="customer-image swiper-slide">
-                  <img src="images/companies/gorenje.png" alt="gorenje logo" />
-                </div>
-                <div class="customer-image swiper-slide">
-                  <img src="images/companies/bsh.png" alt="bsh logo" />
-                </div>
-                <div class="customer-image swiper-slide">
-                  <img src="images/companies/gorenje.png" alt="gorenje logo" />
-                </div>
-                <div class="customer-image swiper-slide">
-                  <img src="images/companies/bsh.png" alt="bsh logo" />
-                </div>
-                <div class="customer-image swiper-slide">
-                  <img src="images/companies/gorenje.png" alt="gorenje logo" />
+          <div class="slider-wrapper">
+            <div id="splide1" class="splide">
+              <div class="splide__arrows">
+                <button class="splide__arrow splide__arrow--prev">
+                  <img src="images/left-arrow.svg" alt="" />
+                </button>
+                <button class="splide__arrow splide__arrow--next">
+                  <img src="images/right-arrow-purple.svg" alt="" />
+                </button>
+              </div>
+              <div class="splide__track">
+                <div class="splide__list">
+                  <div class="splide__slide">
+                    <div class="image-wrapper flex">
+                      <img
+                        src="images/companies/gorenje.png"
+                        alt="gorenje logo"
+                      />
+                    </div>
+                  </div>
+                  <div class="splide__slide">
+                    <div class="image-wrapper flex">
+                      <img src="images/companies/bsh.png" alt="bsh logo" />
+                    </div>
+                  </div>
+                  <div class="splide__slide">
+                    <div class="image-wrapper flex">
+                      <img
+                        src="images/companies/gorenje.png"
+                        alt="gorenje logo"
+                      />
+                    </div>
+                  </div>
+                  <div class="splide__slide">
+                    <div class="image-wrapper flex">
+                      <img src="images/companies/bsh.png" alt="bsh logo" />
+                    </div>
+                  </div>
+                  <div class="splide__slide">
+                    <div class="image-wrapper flex">
+                      <img src="images/companies/bsh.png" alt="gorenje logo" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="swiper-button-next-3">
-              <img src="images/right-arrow-purple.svg" alt="" />
-            </div>
-            <div class="swiper-button-prev-3">
-              <img src="images/left-arrow.svg" alt="" />
-            </div>
-            <div class="swiper-pagination-3"></div>
           </div>
         </div>
       </section>
@@ -602,7 +659,8 @@
         </div>
       </div>
     </footer>
-    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <!-- <script src="js/swiper-bundle.min.js"></script> -->
     <script src="js/main.js"></script>
   </body>
 </html>
