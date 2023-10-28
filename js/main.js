@@ -65,12 +65,15 @@ navToggle.addEventListener("click", () => {
         nav.setAttribute("data-visible", "true");
         navToggle.setAttribute("aria-expanded", "true");
         iconElement.className = "fa-solid fa-xmark fa-2xl";
+        navToggle.style.position = "fixed";
     } else {
         nav.setAttribute("data-visible", "false");
         navToggle.setAttribute("aria-expanded", "false");
         iconElement.className = "fa-solid fa-bars fa-2xl";
+        navToggle.style.position = "absolute";
     }
 });
+
 
 // SLIDERS
 
