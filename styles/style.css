@@ -976,32 +976,7 @@ footer {
   bottom: -18px;
 }
 
-/* .swiper-pagination-bullet {
-  background-color: var(--clr-primary-400);
-}
-
-.swiper-button-next::after,
-.swiper-rtl .swiper-button-prev::after,
-.swiper-button-prev::after,
-.swiper-rtl .swiper-button-next::after {
-  content: '';
-}
-
-@media (max-width: 1030px) {
-  .swiper-button-next,
-  .swiper-button-prev {
-    display: none;
-  }
-}
-
-.customers-section .swiper-slide,
-.partners-section .swiper-slide {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-} */
+/* Slider settings */
 
 .splide {
   position: static;
@@ -1021,6 +996,11 @@ footer {
 
 .image-wrapper {
   justify-content: center;
+}
+
+.sales-program-section .splide__arrow--next,
+.sales-program-section .splide__arrow--prev {
+  top: 36%;
 }
 
 .splide__arrow--next {

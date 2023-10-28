@@ -72,13 +72,16 @@ navToggle.addEventListener("click", () => {
     }
 });
 
-// SLIDER
+// SLIDERS
 
 let splide1 = new Splide('#splide1', {
     type: 'loop',
     perPage: 4,
     snap: true,
     breakpoints: {
+        1100: {
+            arrows: false
+        },
         900: {
             perPage: 3,
             arrows: false,
@@ -101,13 +104,17 @@ let splide2 = new Splide('#splide2', {
     perPage: 4,
     snap: true,
     breakpoints: {
+        1100: {
+            arrows: false
+        },
+        900: {
+            perPage: 3,
+        },
         640: {
             perPage: 2,
-            arrows: false,
         },
         480: {
             perPage: 1,
-            arrows: false,
         },
     },
 });
@@ -119,6 +126,13 @@ let splide3 = new Splide('#splide3', {
     perPage: 4,
     snap: true,
     breakpoints: {
+        1100: {
+            arrows: false
+        },
+        900: {
+            perPage: 3,
+            arrows: false,
+        },
         640: {
             perPage: 2,
             arrows: false,
