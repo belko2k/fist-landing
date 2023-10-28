@@ -114,6 +114,24 @@ let splide2 = new Splide('#splide2', {
 
 splide2.mount();
 
+let splide3 = new Splide('#splide3', {
+    type: 'loop',
+    perPage: 4,
+    snap: true,
+    breakpoints: {
+        640: {
+            perPage: 2,
+            arrows: false,
+        },
+        480: {
+            perPage: 1,
+            arrows: false,
+        },
+    },
+});
+
+splide3.mount();
+
 // FAQ ACCORDION
 
 document.addEventListener('DOMContentLoaded', () => {

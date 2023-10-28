@@ -261,6 +261,7 @@ body {
 .hero-section {
   position: relative;
   overflow: hidden;
+  isolation: isolate;
 }
 
 .video-bg {
@@ -419,6 +420,10 @@ body {
   padding-block: 3rem;
 }
 
+.card-wrapper {
+  justify-content: center;
+}
+
 .card {
   gap: 1rem;
   position: relative;
@@ -437,13 +442,11 @@ body {
 .card-image {
   position: relative;
   height: 119px;
-  isolation: isolate;
 }
 
 .card-image .bg {
   position: absolute;
   bottom: 0;
-
   z-index: -1;
 }
 
@@ -472,7 +475,7 @@ body {
   width: 190px;
 }
 
-.sales-program-section button {
+.sales-program-section button[data-slider-btn='false'] {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
