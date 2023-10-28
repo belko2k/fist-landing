@@ -84,15 +84,12 @@ let splide1 = new Splide('#splide1', {
         },
         900: {
             perPage: 3,
-            arrows: false,
         },
         640: {
             perPage: 2,
-            arrows: false,
         },
         480: {
             perPage: 1,
-            arrows: false,
         },
     },
 });
@@ -129,17 +126,14 @@ let splide3 = new Splide('#splide3', {
         1100: {
             arrows: false
         },
-        900: {
+        960: {
             perPage: 3,
-            arrows: false,
         },
         640: {
             perPage: 2,
-            arrows: false,
         },
         480: {
             perPage: 1,
-            arrows: false,
         },
     },
 });
