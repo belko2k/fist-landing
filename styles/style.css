@@ -74,8 +74,6 @@
 /* general styling */
 
 body {
-  display: flex;
-  flex-direction: column;
   font-family: var(--ff-body);
   background-color: var(--clr-bg-primary);
   font-size: var(--fs-500);
@@ -101,7 +99,6 @@ body {
 .nav-wrapper {
   gap: 1rem;
   align-items: center;
-  /* margin-left: auto; */
   justify-content: space-between;
 }
 
@@ -248,14 +245,6 @@ body {
   }
 }
 
-/* .dropdown-content a:hover {
-  background-color: var(--clr-neutral-300);
-}
-
-.dropdown:hover .dropbtn {
-  background-color: var(--clr-neutral-300);
-} */
-
 /*  Hero section */
 
 .hero-section {
@@ -286,12 +275,10 @@ body {
 }
 
 .search-wrapper {
-  display: flex;
   justify-content: end;
 }
 
 .search-bar {
-  display: flex;
   align-items: center;
   width: 355px;
   background: var(--clr-secondary-900);
@@ -414,10 +401,6 @@ body {
 
 .sales-program-section .secondary-heading {
   padding-top: 1.875rem;
-}
-
-.slide-container {
-  padding-block: 3rem;
 }
 
 .card-wrapper {
