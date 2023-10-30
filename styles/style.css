@@ -503,6 +503,14 @@ body {
   padding-bottom: 1.6875rem;
 }
 
+/* .process-section span {
+  position: absolute;
+  display: inline-block;
+  max-width: 100px;
+  color: var(--clr-neutral-100);
+  font-size: var(--fs-400);
+} */
+
 /* Granulats section */
 
 .granulats-section {
