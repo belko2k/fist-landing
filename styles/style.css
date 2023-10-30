@@ -994,6 +994,14 @@ footer {
   position: relative;
   max-width: 90%;
   margin-inline: auto;
+}
+
+.sales-program-section .slider-wrapper {
+  padding-block: 3rem;
+}
+
+.partners-section .slider-wrapper,
+.customers-section .slider-wrapper {
   padding-block: 5rem;
 }
 
