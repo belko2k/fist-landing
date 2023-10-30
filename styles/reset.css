@@ -13,6 +13,11 @@
   margin: 0;
   padding: 0;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 /*
   Typographic tweaks!
   3. Add accessible line-height
